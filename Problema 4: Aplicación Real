@@ -1,0 +1,14 @@
+1. Descripción del problema
+Se implementó un sistema de atención al cliente en un banco donde los clientes pueden solicitar diferentes servicios y algunos poseen prioridad especial. El sistema debe gestionar múltiples colas y respetar la prioridad de atención.
+2. Tipos de colas utilizadas
+•	Cola simple (FIFO) para cada tipo de servicio.
+•	Cola de prioridad para decidir el orden global de atención.
+3. Funcionamiento del sistema
+Cuando un cliente llega, se registra en la cola correspondiente a su servicio y también en una cola de prioridad global. Al momento de atender, se selecciona el cliente con mayor prioridad y se actualizan ambas colas.
+4. Cómo se optimiza el tiempo de espera
+El uso de una cola de prioridad garantiza que los clientes premium o con necesidades especiales sean atendidos primero, mientras que las colas por servicio permiten organizar adecuadamente los recursos del banco.
+5. Complejidad temporal
+•	Registro de cliente: O(n log n) por ordenamiento en la cola de prioridad.
+•	Atención de cliente: O(n)
+6. Complejidad espacial
+O(n), donde n es el número total de clientes en el sistema.

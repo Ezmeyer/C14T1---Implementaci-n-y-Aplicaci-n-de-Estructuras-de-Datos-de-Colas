@@ -1,0 +1,23 @@
+1. Descripción del problema
+El objetivo es implementar una cola básica utilizando una lista enlazada. Una cola es una estructura de datos lineal que sigue el principio FIFO (First In, First Out), donde el primer elemento en entrar es el primero en salir.
+2. Enfoque de la solución
+Se utilizó una lista enlazada simple para implementar la cola. Cada nodo contiene un dato y una referencia al siguiente nodo. La clase Cola mantiene referencias tanto al frente como al final de la estructura para garantizar operaciones eficientes.
+3. Cómo la cola resuelve el problema
+La cola permite gestionar datos en el mismo orden en que llegan. Esto es útil en sistemas como colas de impresión, atención al cliente o procesamiento de tareas, donde el orden de llegada debe respetarse.
+4. Métodos implementados
+•	enqueue(elemento): Inserta un elemento al final de la cola.
+•	dequeue(): Elimina y devuelve el elemento al frente.
+•	front(): Consulta el elemento al frente sin eliminarlo.
+•	is_empty(): Indica si la cola está vacía.
+•	size(): Retorna la cantidad de elementos almacenados.
+5. Ejemplo de ejecución
+Al ejecutar el archivo, se insertan varios elementos en la cola y se realizan operaciones de consulta y eliminación para demostrar su funcionamiento.
+6. Complejidad temporal
+•	enqueue(): O(1)
+•	dequeue(): O(1)
+•	front(): O(1)
+•	is_empty(): O(1)
+•	size(): O(1)
+Esto es posible porque se mantienen referencias directas al frente y al final de la lista enlazada.
+7. Complejidad espacial
+La complejidad espacial es O(n), donde n es el número de elementos almacenados en la cola, ya que cada elemento requiere un nodo adicional en memoria.

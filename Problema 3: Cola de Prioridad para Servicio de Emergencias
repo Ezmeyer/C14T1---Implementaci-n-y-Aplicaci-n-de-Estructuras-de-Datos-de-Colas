@@ -1,0 +1,14 @@
+README.md (Problema 3)
+1. Descripción del problema
+Se requiere implementar una cola de prioridad para gestionar la atención de pacientes en un servicio de emergencias hospitalarias, donde los pacientes más urgentes deben ser atendidos primero.
+2. Enfoque de la solución
+Cada paciente se representa como un objeto con nombre y nivel de urgencia. La cola de prioridad se implementa utilizando una lista que se mantiene ordenada por nivel de urgencia cada vez que se inserta un nuevo paciente.
+3. Cómo la cola de prioridad resuelve el problema
+La cola de prioridad permite atender primero a los pacientes más críticos. Además, cuando dos pacientes tienen el mismo nivel de urgencia, se respeta el orden de llegada, lo que garantiza justicia en la atención.
+4. Ejemplo de simulación
+Se añadieron ocho pacientes con distintos niveles de urgencia y se simula la atención en orden de prioridad hasta que la cola queda vacía.
+5. Complejidad temporal
+•	enqueue(): O(n log n) debido al ordenamiento
+•	dequeue(): O(n) al eliminar el primer elemento
+6. Complejidad espacial
+O(n), donde n es el número de pacientes en espera.

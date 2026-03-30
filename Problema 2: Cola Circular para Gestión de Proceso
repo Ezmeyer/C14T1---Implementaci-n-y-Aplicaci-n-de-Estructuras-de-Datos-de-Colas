@@ -1,0 +1,14 @@
+1. Descripción del problema
+Se requiere implementar una cola circular para simular la gestión de procesos en un sistema operativo utilizando el algoritmo de planificación Round Robin.
+2. Enfoque de la solución
+Se representó cada proceso como un objeto con un identificador y un tiempo de ejecución restante. La cola circular se simuló utilizando una lista donde los procesos que no terminan su ejecución se vuelven a insertar al final.
+3. Cómo la cola circular resuelve el problema
+En el algoritmo Round Robin, los procesos se ejecutan por turnos en intervalos de tiempo fijos (quantum). La cola circular permite que, una vez que un proceso usa su turno, pase al final de la cola si aún no ha terminado, garantizando equidad entre procesos.
+4. Ejemplo de simulación
+Se crearon cinco procesos con distintos tiempos de ejecución. Durante la simulación, cada proceso recibe 3 unidades de tiempo por turno hasta finalizar.
+5. Complejidad temporal
+•	enqueue(): O(1)
+•	dequeue(): O(n) usando lista (por desplazamiento)
+•	round_robin(): O(n * k), donde k es el número de ciclos hasta que todos los procesos finalizan.
+6. Complejidad espacial
+O(n), ya que se almacenan todos los procesos activos en la cola.
